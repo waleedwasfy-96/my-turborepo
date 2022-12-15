@@ -10,6 +10,7 @@ export async function getServerSideProps() {
   // Fetch data from external API
   const res = await fetch(`https://www.anapioficeandfire.com/api/houses`)
   const data: House[] = await res.json();
+  console.log(JSON.stringify(data));
 
   console.log("Test some logging!");
 
