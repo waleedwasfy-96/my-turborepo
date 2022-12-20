@@ -1,4 +1,3 @@
-import { Button } from "ui";
 
 interface House {
   name: string,
@@ -22,7 +21,7 @@ export default function Docs() {
   return (
     <div>
       <h1>Docs</h1>
-      <Button />
+      <button>Boop</button>;
     </div>
   );
 }
