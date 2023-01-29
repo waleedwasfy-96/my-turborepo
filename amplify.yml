@@ -20,7 +20,7 @@ applications:
             - cd .next/standalone
             - ls -al apps/docs
             - cp -r apps/docs/* .
-            #- mv apps/docs/.next .
+            - mv apps/docs/.next .
             - ls -al
             - ls -al .next 
             - cd ../..
