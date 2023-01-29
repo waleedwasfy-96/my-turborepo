@@ -5,7 +5,6 @@ module.exports = {
   output: 'standalone',
   swcMinify: true,
   experimental: {
-    transpilePackages: ["ui"],
     outputFileTracingRoot: path.join(__dirname, '../../'),
   },
 };
