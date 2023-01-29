@@ -23,19 +23,6 @@ applications:
             - ls -al
             - ls -al .next 
             - cd ../..
-            #- ls -al ..
-            #- ls -al ../..
-            #- mkdir -p .next/standalone/node_modules
-            #- cp -r ./node_modules/* .next/standalone/node_modules
-            #- ls -al .next/standalone/node_modules
-            #- cp -r ../../node_modules/* .next/standalone/node_modules
-            #- ls -al .next/standalone/node_modules
-            #- ls -a
-            #- cd .next/standalone/node_modules
-            #- du -sh *
-            #- rm -rf *turbo*
-            #- rm -rf *prettier*
-            #- rm -rf *eslint*
       artifacts:
         baseDirectory: .next
         files:
