@@ -19,8 +19,8 @@ applications:
             - ls -al .next/standalone
             - cd .next/standalone
             - ls -al apps/docs
-            - mv apps/docs/* .
-            - mv apps/docs/.next .
+            - cp -r apps/docs/* .
+            #- mv apps/docs/.next .
             - ls -al
             - ls -al .next 
             - cd ../..
