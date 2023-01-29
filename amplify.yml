@@ -1,0 +1,43 @@
+version: 1
+applications:
+  - frontend:
+      phases:
+        preBuild:
+          commands:
+            - pwd
+            - cd ../..
+            - pwd
+            - yarn install
+            - ls -a
+        build:
+          commands:
+            - cd apps/docs
+            - pwd
+            - yarn build
+            - ls -a .next
+            - ls -al .next/standalone
+            - cd .next/standalone
+            - ls -al apps/docs
+            - mv apps/docs/* .
+            - mv apps/docs/.next .
+            - ls -al
+            - ls -al .next 
+            - cd ../..
+            #- ls -al ..
+            #- ls -al ../..
+            #- mkdir -p .next/standalone/node_modules
+            #- cp -r ./node_modules/* .next/standalone/node_modules
+            #- ls -al .next/standalone/node_modules
+            #- cp -r ../../node_modules/* .next/standalone/node_modules
+            #- ls -al .next/standalone/node_modules
+            #- ls -a
+            #- cd .next/standalone/node_modules
+            #- du -sh *
+            #- rm -rf *turbo*
+            #- rm -rf *prettier*
+            #- rm -rf *eslint*
+      artifacts:
+        baseDirectory: .next
+        files:
+          - '**/*'
+    appRoot: apps/docs
