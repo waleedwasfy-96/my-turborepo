@@ -12,9 +12,10 @@ applications:
             - ls -a
         build:
           commands:
+            - yarn build
             - cd apps/docs
             - pwd
-            - yarn build
+            #- yarn build
             - ls -a .next
             - ls -al .next/standalone
             - cd .next/standalone
