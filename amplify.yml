@@ -4,6 +4,7 @@ applications:
       phases:
         preBuild:
           commands:
+            - echo "===============COMING_FROM_REPO==================="
             - pwd
             - cd ../..
             - pwd
